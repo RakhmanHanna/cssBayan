@@ -17,41 +17,39 @@ h2 {
 
 .acc {
 	max-width: 500px;
-	margin: 20px auto;
+	margin: 0 auto;
 	cursor: pointer;
 	overflow: hidden;
 }
 .acc-item {
-	position: relative;
-	margin-bottom: 5px;
 	border: 1px solid rgb(222, 236, 151);
 	overflow: hidden;
 }
-.acc-title {
+.acc-label {
 	display: block;
 	padding: 10px 15px;
 	color:burlywood;
 	transition: background .2s ease-out;
 	
 }
-.acc-title:hover {
+.acc-label:hover {
 	background-color: rgb(222, 236, 151);
 	color: #322f2c;
 }
-.acc-input {
-	width: 0;
-	height: 0;
+input {
 	position: absolute;
 	opacity: 0;
+	z-index: -1;
 }
-/* .acc-input:checked ~ .acc-title {} */
-/* .acc-input:checked + .acc-title {
-
-} */
+input:checked ~ .acc-item-content {
+	max-height: 100vh;
+	padding: 1em;
+}
 
 .acc-item-content {
 	display: flex;
 	align-items: center;
+	transition: all 0.35s;
 	/* display: none; */
 }
 .acc-item-content img {
