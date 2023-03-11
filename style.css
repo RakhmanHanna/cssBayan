@@ -1,0 +1,60 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	background-color: #322f2c;
+	color: aliceblue;
+}
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+h2 {
+	color: rgb(222, 236, 151);
+}
+/* acc */
+
+.acc {
+	max-width: 500px;
+	margin: 20px auto;
+	cursor: pointer;
+	overflow: hidden;
+}
+.acc-item {
+	position: relative;
+	margin-bottom: 5px;
+	border: 1px solid rgb(222, 236, 151);
+	overflow: hidden;
+}
+.acc-title {
+	display: block;
+	padding: 10px 15px;
+	color:burlywood;
+	transition: background .2s ease-out;
+	
+}
+.acc-title:hover {
+	background-color: rgb(222, 236, 151);
+	color: #322f2c;
+}
+.acc-input {
+	width: 0;
+	height: 0;
+	position: absolute;
+	opacity: 0;
+}
+/* .acc-input:checked ~ .acc-title {} */
+/* .acc-input:checked + .acc-title {
+
+} */
+
+.acc-item-content {
+	display: flex;
+	align-items: center;
+	/* display: none; */
+}
+.acc-item-content img {
+	width: 50%;
+	margin: 0 auto;
+}
