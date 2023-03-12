@@ -1,0 +1,56 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	background-color: #322f2c;
+	color: aliceblue;
+}
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+h2 {
+	color: rgb(222, 236, 151);
+}
+/* acc */
+
+.acc {
+	max-width: 500px;
+	margin: 0 auto;
+	overflow: hidden;
+	cursor: pointer;
+}
+.acc-item {
+	border: 1px solid rgb(222, 236, 151);
+	overflow: hidden;
+	cursor: pointer;
+}
+.acc-label {
+	display: block;
+	padding: 10px 15px;
+	color:burlywood;
+	transition: background .2s ease-out;
+}
+input {
+	opacity: 2;
+	z-index: -1;
+	display: block;
+}
+input:checked ~ .acc-item-content {
+	max-height: 100vh;
+	padding: 1em;
+	display: block;
+}
+.acc-item-content {
+	display: flex;
+	align-items: center;
+	transition: all 0.35s;
+	display: none;
+}
+.acc-item-content img {
+	width: 50%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+}
